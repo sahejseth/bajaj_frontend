@@ -10,7 +10,7 @@ const App = () => {
 
   const handleFormSubmit = async (data) => {
     try {
-      const res = await axios.post('http://localhost:5000/bfhl', data);
+      const res = await axios.post('https://bajaj-backend-ijkk.onrender.com/bfhl', data);
       setResponse(res.data);
     } catch (error) {
       console.error('Error fetching the data', error);
